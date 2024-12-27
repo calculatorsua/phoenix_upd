@@ -1,7 +1,7 @@
 ---@diagnostic disable: undefined-global, need-check-nil, lowercase-global, cast-local-type, unused-local
 script_author('calculator')
 script_name('atools')
-script_version('0.1')
+script_version('0.2')
 
 function update()
     local raw = 'https://github.com/calculatorsua/phoenix_upd/blob/main/update.json'
@@ -147,7 +147,7 @@ local pravilag =
 
 function main()
     while not isSampAvailable() do wait(200) end
-    sampAddChatMessage('{FF5051}[PHOENIX TOOLS]{FFFFFF} успішно завантажений, відкриття меню - X',0xFFFFFF)
+    sampAddChatMessage('{FF5051}[PHOENIX TOOLS]{FFFFFF} успішно завантажений, відкриття меню - X 123',0xFFFFFF)
     local lastver = update():getLastVersion()
     sampAddChatMessage('Скрипт загружен, версия: '..lastver, -1)
     if thisScript().version ~= lastver then
